@@ -55,7 +55,11 @@ fn combined_regex(regexes: &[&str]) -> String {
     combined
 }
 
-pub fn find_secrets(paths: &[PathBuf], strict_ignore: bool, only_matching: bool) -> Result<usize, Box<dyn Error>> {
+pub fn find_secrets(
+    paths: &[PathBuf],
+    strict_ignore: bool,
+    only_matching: bool,
+) -> Result<usize, Box<dyn Error>> {
     let predefined = predefined_secret_regexes();
     let combined = combined_regex(&predefined);
 
