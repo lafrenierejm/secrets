@@ -59,6 +59,7 @@ pub fn find_secrets(
     paths: &[PathBuf],
     strict_ignore: bool,
     only_matching: bool,
+    writer: BufferWriter,
 ) -> Result<usize, Box<dyn Error>> {
     let predefined = predefined_secret_regexes();
     let combined = combined_regex(&predefined);
@@ -70,7 +71,7 @@ pub fn find_secrets(
     let match_count = Arc::new(AtomicUsize::new(0));
     let match_count_result = match_count.clone();
 
-    let bufwtr = Arc::new(BufferWriter::stdout(ColorChoice::Never));
+    let bufwtr = Arc::new(writer);
 
     let mut to_search = Vec::<PathBuf>::new();
     if strict_ignore && ignore_info.ignore_matcher.is_some() {
@@ -172,7 +173,12 @@ mod tests {
 
     #[test]
     fn no_false_positives() {
-        let res = find_secrets(&[PathBuf::from("test/none")], false, false);
+        let res = find_secrets(
+            &[PathBuf::from("test/none")],
+            false,
+            false,
+            BufferWriter::stdout(ColorChoice::Never),
+        );
         assert_eq!(res.unwrap(), 0)
     }
 
@@ -181,7 +187,12 @@ mod tests {
         for maybe_entry in fs::read_dir("test/one_per_line").unwrap() {
             let entry = maybe_entry.unwrap();
             let contents = fs::read_to_string(entry.path()).unwrap();
-            let res = find_secrets(&[entry.path()], false, false);
+            let res = find_secrets(
+                &[entry.path()],
+                false,
+                false,
+                BufferWriter::stdout(ColorChoice::Never),
+            );
             assert_eq!(
                 res.unwrap(),
                 contents.matches("\n").count(),
@@ -191,14 +202,24 @@ mod tests {
         }
         for maybe_entry in fs::read_dir("test/one_per_file").unwrap() {
             let entry = maybe_entry.unwrap();
-            let res = find_secrets(&[entry.path()], false, false);
+            let res = find_secrets(
+                &[entry.path()],
+                false,
+                false,
+                BufferWriter::stdout(ColorChoice::Never),
+            );
             assert_eq!(res.unwrap(), 1, "{:?}", entry.file_name());
         }
     }
 
     #[test]
     fn strict_ignore_works() {
-        let res = find_secrets(&[PathBuf::from("test")], true, false);
+        let res = find_secrets(
+            &[PathBuf::from("test")],
+            true,
+            false,
+            BufferWriter::stdout(ColorChoice::Never),
+        );
         assert_eq!(res.unwrap(), 0);
 
         let res = find_secrets(
@@ -208,6 +229,7 @@ mod tests {
             ],
             true,
             false,
+            BufferWriter::stdout(ColorChoice::Never),
         );
         assert_eq!(res.unwrap(), 0);
     }
