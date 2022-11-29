@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669758234377,
+  "lastUpdate": 1669758505289,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -295,6 +295,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 7598048974,
             "range": "± 393395061",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "distinct": true,
+          "id": "f5c774f71b12283aa32a9c0d7d2dcd4be9113b3f",
+          "message": "Define Actions workflow to build and load Docker image",
+          "timestamp": "2022-11-29T15:39:27-06:00",
+          "tree_id": "247dc9ea64011e4ae80d382a3f140c4900a21e48",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/f5c774f71b12283aa32a9c0d7d2dcd4be9113b3f"
+        },
+        "date": 1669758504216,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 9784371809,
+            "range": "± 504457580",
             "unit": "ns/iter"
           }
         ]
