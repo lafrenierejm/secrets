@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1669770567938,
+  "lastUpdate": 1669778583350,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -415,6 +415,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 8106450202,
             "range": "± 501716720",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "distinct": true,
+          "id": "0e26c8a7eee42ce0305f1cb6826bece437bb2cc5",
+          "message": "Publish image to Docker Hub",
+          "timestamp": "2022-11-29T21:14:55-06:00",
+          "tree_id": "8574ca1f9b5f84fd3c9699e61e37e9f43dee8a30",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/0e26c8a7eee42ce0305f1cb6826bece437bb2cc5"
+        },
+        "date": 1669778582596,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 7619573781,
+            "range": "± 515659859",
             "unit": "ns/iter"
           }
         ]
