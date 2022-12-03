@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1670042626558,
+  "lastUpdate": 1670045478478,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -505,6 +505,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 6668764426,
             "range": "± 741021570",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "distinct": false,
+          "id": "56db6223691171f43e92509fe458c84dd12b8439",
+          "message": "Shallow clone getsentry/sentry when running benchmark",
+          "timestamp": "2022-12-02T23:22:56-06:00",
+          "tree_id": "34d939a8f519a4d90c59eb1b11ad0f117504351a",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/56db6223691171f43e92509fe458c84dd12b8439"
+        },
+        "date": 1670045478034,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 6771562649,
+            "range": "± 863087953",
             "unit": "ns/iter"
           }
         ]
