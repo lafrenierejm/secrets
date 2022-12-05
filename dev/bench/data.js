@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1670045478478,
+  "lastUpdate": 1670214615076,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -535,6 +535,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 6771562649,
             "range": "± 863087953",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph M LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc9e7af72e20fa3856a609b4712e2342fcacfae4",
+          "message": "Remove getsentry/sentry submodule (#49)\n\n* Remove github.com:getsentry/sentry submodule\r\n\r\nThis is needed to avoid the sentry repo being downloaded when installing\r\nripsecrets via Cargo.\r\n\r\n* Shallow clone getsentry/sentry when running benchmark",
+          "timestamp": "2022-12-03T08:38:27-08:00",
+          "tree_id": "34d939a8f519a4d90c59eb1b11ad0f117504351a",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/fc9e7af72e20fa3856a609b4712e2342fcacfae4"
+        },
+        "date": 1670214614593,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 7205311654,
+            "range": "± 574520916",
             "unit": "ns/iter"
           }
         ]
