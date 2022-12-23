@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1670823121453,
+  "lastUpdate": 1671815167527,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -595,6 +595,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 6855282197,
             "range": "± 557971007",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph M LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "42acb0648ceadfa92d99bfcb68a9b8f911226312",
+          "message": "Cache Cargo dependencies during Nix build (#52)\n\n* Replace `naersk` with `crane` to cache Nix-built dependencies\r\n\r\n* Remove `cargo check` pre-commit hook\r\n\r\nhttps://github.com/cachix/pre-commit-hooks.nix/issues/126 reduces the usefulness\r\nof the hook.  I would like to reintroduce this check once that upstream issue\r\nhas been resolved.\r\n\r\n* Update Nix flake sources\r\n\r\n* Update Cargo dependencies\r\n\r\n```shell\r\ncargo update\r\n```\r\n\r\n* Replacing single-character string with char\r\n\r\n* Add `packages.ripsecrets`\r\n\r\n* Perform Nix flake build and check in same step",
+          "timestamp": "2022-12-22T21:46:50-08:00",
+          "tree_id": "1cb6a26d116ad735ef3aa34e79172ffa8fb87675",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/42acb0648ceadfa92d99bfcb68a9b8f911226312"
+        },
+        "date": 1671815167095,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 5830056385,
+            "range": "± 87462044",
             "unit": "ns/iter"
           }
         ]
