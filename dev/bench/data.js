@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1671815167527,
+  "lastUpdate": 1674962451318,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -625,6 +625,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 5830056385,
             "range": "± 87462044",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph M LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e0db1b2383b3407b30227c41b0cdad2948418e2e",
+          "message": "Enable `typos` pre-commit hook and correct detected typos (#56)\n\n* Enable `clippy` as a Nix flake checker\r\n\r\n* Apply changes suggested by Clippy\r\n\r\n* Enable `typos` pre-commit hook and correct detected typos\r\n\r\nSee https://github.com/crate-ci/typos for more information.",
+          "timestamp": "2023-01-28T11:35:41-08:00",
+          "tree_id": "4c8110d0daa6b9ed0db72032c79ec27fc4dc5924",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/e0db1b2383b3407b30227c41b0cdad2948418e2e"
+        },
+        "date": 1674962450513,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 8318383421,
+            "range": "± 199776367",
             "unit": "ns/iter"
           }
         ]
