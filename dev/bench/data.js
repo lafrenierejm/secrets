@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1674962451318,
+  "lastUpdate": 1682397026801,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -655,6 +655,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 8318383421,
             "range": "± 199776367",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joseph@lafreniere.xyz",
+            "name": "Joseph M LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "712d4fc26711cb6f365ec529325d7e99b0f59226",
+          "message": "Export Nix overlay (#64)\n\nAn overlay is required to access this repository's packages from another flake.",
+          "timestamp": "2023-04-24T06:58:40-07:00",
+          "tree_id": "89335c8e35667aa907fc60e1b8f44b70379daa36",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/712d4fc26711cb6f365ec529325d7e99b0f59226"
+        },
+        "date": 1682397026235,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 7133290758,
+            "range": "± 180179555",
             "unit": "ns/iter"
           }
         ]
