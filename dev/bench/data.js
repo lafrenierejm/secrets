@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1685073569650,
+  "lastUpdate": 1703431295170,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -715,6 +715,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 8468185701,
             "range": "± 458292564",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@lafreniere.xyz",
+            "name": "Joseph M LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a7627cfc4412203d059ee43df320696f10d1daf",
+          "message": "Update deps (#80)\n\nBumps rustc to 1.73.0 (cc66ad468 2023-10-03)",
+          "timestamp": "2023-12-11T10:33:45-08:00",
+          "tree_id": "4276ce150286614fb6c20fa5e3f269f2487b883d",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/8a7627cfc4412203d059ee43df320696f10d1daf"
+        },
+        "date": 1703431294843,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 434649726,
+            "range": "± 3133853",
             "unit": "ns/iter"
           }
         ]
