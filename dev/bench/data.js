@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703431295170,
+  "lastUpdate": 1708304778202,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -745,6 +745,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 434649726,
             "range": "± 3133853",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@lafreniere.xyz",
+            "name": "Joseph LaFreniere",
+            "username": "lafrenierejm"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07e705b8ee144ceb5b9d7d45f1ac13ec6d197ae4",
+          "message": "Generate manpage as part of build (#83)\n\n* Generate manpage via `clap_mangen`\r\n\r\n* Cleanup CLI docstrings",
+          "timestamp": "2024-01-15T16:22:26-08:00",
+          "tree_id": "9b101f39258fe6cda6ac0112bfeeee95f3284628",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/07e705b8ee144ceb5b9d7d45f1ac13ec6d197ae4"
+        },
+        "date": 1708304777713,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 438233344,
+            "range": "± 3091269",
             "unit": "ns/iter"
           }
         ]
