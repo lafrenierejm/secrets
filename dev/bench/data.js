@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709454456403,
+  "lastUpdate": 1722815253925,
   "repoUrl": "https://github.com/lafrenierejm/ripsecrets",
   "entries": {
     "Benchmark": [
@@ -835,6 +835,36 @@ window.BENCHMARK_DATA = {
             "name": "Find secrets in getsentry/sentry/find_secrets function",
             "value": 385446877,
             "range": "± 2736501",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "contact@alexandregv.fr",
+            "name": "Alexandre GUIOT--VALENTIN",
+            "username": "alexandregv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4bdd9b058ee2fe8e51f10ab06c90266e900f45ef",
+          "message": "Add intra42 client secret matcher (#86)\n\nintra42 is the intranet and API of \"42 School\", a CS school.\r\nThe API is open to all students in 57 campus around the world.\r\nIt is thus often subject to credentials leaks on GitHub\r\nSee https://42.fr and https://api.intra.42.fr/",
+          "timestamp": "2024-05-12T08:52:59-07:00",
+          "tree_id": "f08f1bcb73ed6a05b22f5e8a883cd7fff3f96e1c",
+          "url": "https://github.com/lafrenierejm/ripsecrets/commit/4bdd9b058ee2fe8e51f10ab06c90266e900f45ef"
+        },
+        "date": 1722815253489,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "Find secrets in getsentry/sentry/find_secrets function",
+            "value": 403050599,
+            "range": "± 2355596",
             "unit": "ns/iter"
           }
         ]
